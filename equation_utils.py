@@ -2,7 +2,6 @@
 from sympy import symbols, Eq
 from sympy import solve as sympy_solve
 
-
 ELEMENTS = [
     'H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne',
     'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca',
@@ -57,8 +56,3 @@ def my_solve(equations, coefficients):
         for coefficient in coefficients:
             coefficient_values.append(float(solution[coefficient]))
         return coefficient_values
-
-
-
-
-
