@@ -39,6 +39,7 @@ def count_atoms_in_molecule(molecular_formula):
   for i in split_before_uppercases(molecular_formula):
     per, num =split_at_digit(i)
     mol_dict[per] = num
+  return mol_dict
 
 def parse_chemical_reaction(reaction_equation):
     """Takes a reaction equation (string) and returns reactants and products as lists.  
